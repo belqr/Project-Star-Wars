@@ -1,0 +1,559 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-image: url("image/background-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1900px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+/*título star wars*/
+.container-star-wars-title{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/*div contendo duas figure com duas imagens do titulo STAR WARS*/
+.container-title{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+/*imagens do titulo star wars*/
+.container-title img{
+    margin: 0 auto;
+    max-width: 20rem;
+    width: 100%;
+    position: relative;
+    top: 3rem;
+}
+
+/* figure do Ren da header*/
+.fig-kylo-ren{
+   margin: 0 auto;
+   width: 100%;
+   height: 32rem;
+}
+
+/*imagem do Ren*/
+.kylo-ren-image{
+    margin: 0 auto;
+    max-width: 50rem;
+    width: 100%;
+    position: relative;
+    right: 8%;
+    z-index: 73;
+}
+
+
+/*div contendo o pulador de página*/
+.container-page-next{
+    max-width: 7.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+}
+
+/*texto da div do pulador de pagina*/
+.text-page{
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    width: max-content;
+}
+
+.text-page h3{
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+/*div contendo as imagens das divisas do pulador de página*/
+.container-divisa-page{
+    width:7.5em;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.number-page{
+    width: 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.number-page h3{
+    font-weight: 400;
+}
+
+.divisa-page{
+    width: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.divisa-page img{
+    width: 20px;
+    background-color: #A9BDC1;
+}
+.divisa-page img:hover{
+    width: 20.5px;
+    background-color: #566366;
+    cursor: pointer;
+} 
+
+@media (max-width: 475px) {
+    header{
+        background-image: url("image/background-header.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    }
+
+    .container-star-wars-title{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .fig-kylo-ren{
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        height: 13rem;
+    }
+
+    .kylo-ren-image{
+        margin: 0 auto;
+        max-width: 20rem;
+        width: 100%;
+        position: absolute;
+        z-index: 73;
+        left: 0;
+        top: 0;
+    }
+
+    .container-title{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: absolute;
+        right: 5%;
+    }
+
+    .container-title img{
+        max-width: 12rem;
+        width: 70%;
+        position: relative;
+        right: 25%;
+        top: 70%;
+    }
+
+    .container-page-next{
+        border: solid aqua;
+        width: 5rem;
+        height: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        left: 75%;
+        top: 72%;
+    }
+
+    .text-page{
+        border-bottom: 3px solid black; 
+        width:100%;
+    }
+    
+    .text-page h3{
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+    
+    .container-divisa-page{
+        width: 4.5rem;
+        height: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .number-page{
+        width: 2rem;
+        height: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        
+    }
+    
+    .number-page h3{
+        font-weight: 400;
+        font-size: 0.75rem;
+    }
+
+    .number-page p{
+        font-size: 0.5rem;
+    }
+    
+    .divisa-page{
+        width: 2.75rem;
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    
+    .divisa-page img{
+        width: 1.05rem;
+        background-color: #A9BDC1;
+        align-items: center;
+    }
+    .divisa-page img:hover{
+        width: 1.10rem;
+        background-color: #566366;
+        cursor: pointer;
+    } 
+}
+
+/*Main*/
+main{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1900px;
+    position: relative;
+}
+
+/*section 1.1*/
+#container-star-wars-game{
+    background-image: url("image/Robot.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#container-battlebox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container-game{
+    margin: 0 auto;
+    width: 60.5rem;
+    height: 24rem;
+    border-bottom: 3px solid #707070;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.container-start-the-game{
+    margin: 0 auto;
+    width: 16rem;
+    height: 22rem;
+    color: #fff;
+    background-image: url("image/strom-trupe-red.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -2.5rem;
+    z-index: 94;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container-start-the-game h2{
+    height: 5rem;
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.container-start-the-game p{
+    margin: 0 auto;
+    width: 13rem;
+    font-size: small;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.container-start-the-game button{
+    width: 8rem;
+    height: 2rem;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+.container-start-the-game button:hover{
+    background-color: #fff;
+    color: red;
+    cursor: pointer;
+}
+
+.container-start-the-game h6{
+    width: 15rem;
+    font-weight: 300;
+    font-size: 10px;
+    text-align: right;
+}
+
+.container-about-the-game{
+    width: 100%;
+    display: flex; 
+    padding-bottom: 70px;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.container-text-about{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.container-text-about p{
+    font-size: 0.85rem;
+    text-align: right;
+    width: 19rem;
+    padding-top: 17px;
+}
+
+.container-text-about h2{
+    text-align: right;
+    height: 3rem;
+}
+
+.container-text-about span{
+    border-bottom: 3px solid black;
+    width: 9rem;
+}
+
+.battlefront-image{
+    width: 18rem;
+    padding-top: 8px;
+}
+
+/*section 1.2*/
+#container-structure-game{
+    margin: 0 auto;
+    width: 62rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.lord-sifh-image{
+    padding-top: 5px;
+    width: 37.5rem;
+    position: absolute;
+    top: 24rem;
+}
+
+.selection-structure{
+    margin: 0 auto;
+    width: 21rem;
+    height: 22rem;
+    text-align: right;
+    position: relative;
+    z-index: 180;
+    bottom: 9rem;
+    left: 12.5rem;
+}
+
+.selection-structure h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.selection-structure b{
+    font-weight: 800;
+}
+
+.selection-structure ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.selection-structure li{
+    list-style: none;
+    font-size: 1.20rem;
+    font-weight: 500;
+    transition: 0.25s ease-in-out;
+}
+
+.selection-structure li:hover{
+    color: #fff;
+    cursor: pointer;
+    background-color: #D74430;
+}
+
+.rey-image{
+    width: 18rem;
+    position: relative;
+    top: 3rem;
+}
+
+@media (max-width: 475px){
+    main{
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1900px;
+        position: relative;
+    }
+    
+    /* #container-battlebox{
+        background-color: lightseagreen;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    } */
+    
+    /* .container-game{
+        background-color: blue;
+        margin: 0 auto;
+        width: 60.5rem;
+        height: 24rem;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    } */
+    
+    /* .container-start-the-game{
+        margin: 0 auto;
+        width: 16rem;
+        height: 22rem;
+        color: #fff;
+        background-image: url("image/strom-trupe-red.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -2.5rem;
+        z-index: 94;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    } */
+    
+    /* .container-start-the-game h2{
+        height: 5rem;
+        width: 7rem;
+        margin: 0 auto;
+    } */
+    
+    /* .container-start-the-game p{
+        margin: 0 auto;
+        width: 13rem;
+        font-size: small;
+        font-weight: 300;
+        text-align: justify;
+    } */
+    
+    /* .container-start-the-game button{
+        width: 8rem;
+        height: 2rem;
+        margin: 0 auto;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        background: none;
+        color: #fff;
+        transition: 0.3s ease-in;
+    } */
+    
+    .container-start-the-game button:hover{
+        background-color: #fff;
+        color: red;
+        cursor: pointer;
+    }
+    
+    /* .container-start-the-game h6{
+        width: 15rem;
+        font-weight: 300;
+        font-size: 10px;
+        text-align: right;
+    } */
+    
+    /* .container-about-the-game{
+        width: 100%;
+        display: flex; 
+        padding-bottom: 70px;
+        flex-direction: row;
+        justify-content: right;
+        align-items: flex-end;
+    } */
+    
+    /* .container-text-about{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+    } */
+    
+    /* .container-text-about p{
+        font-size: 0.85rem;
+        text-align: right;
+        width: 19rem;
+        padding-top: 17px;
+    } */
+    
+    /* .container-text-about h2{
+        text-align: right;
+        background-color: aquamarine;
+        height: 3rem;
+    } */
+    
+    /* .container-text-about span{
+        border-bottom: 3px solid black;
+        width: 9rem;
+    } */
+    
+    /* .battlefront-image{
+        width: 18rem;
+        padding-top: 8px;
+    } */
+}
