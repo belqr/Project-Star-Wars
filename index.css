@@ -163,30 +163,35 @@ header{
     }
 
     .container-title{
-        width: 100%;
+        width: max-content;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         position: absolute;
-        right: 5%;
+        gap: 4.5rem;
+        left: 5rem;
+        bottom: 4.25rem;
+    }
+
+    .container-title figure{
+        width: 9rem;
     }
 
     .container-title img{
-        max-width: 12rem;
-        width: 70%;
-        position: relative;
-        right: 25%;
-        top: 70%;
+        max-width: 7rem;
+        width: 100;
+        height: 1.75rem;
+        top: 0;
     }
 
     .container-page-next{
-        border: solid aqua;
-        width: 5rem;
+        width: 4.5rem;
         height: 4.5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         position: absolute;
+        z-index: 12;
         left: 75%;
         top: 72%;
     }
@@ -445,55 +450,63 @@ main{
         position: relative;
     }
     
-    /* #container-battlebox{
-        background-color: lightseagreen;
+    #container-star-wars-game{
+        background-image: url("image/Robot.png");
+        background-repeat: no-repeat;
+        background-size: 325px;
+    }
+    
+    #container-battlebox{
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-    } */
+    }
     
-    /* .container-game{
-        background-color: blue;
+    .container-game{
         margin: 0 auto;
-        width: 60.5rem;
-        height: 24rem;
+        height: 55rem;
+        width: 100%;
         position: relative;
+        right: 3rem;
         display: flex;
-        flex-direction: row;
-    } */
+        flex-direction: column;
+        justify-content: flex-end;
+        border: none;
+    }
     
-    /* .container-start-the-game{
+    .container-start-the-game{
         margin: 0 auto;
-        width: 16rem;
-        height: 22rem;
+        width: 18rem;
+        height: 24rem;
         color: #fff;
         background-image: url("image/strom-trupe-red.png");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        top: -2.5rem;
+        top: 3.5rem;
+        left: 39.5%;
         z-index: 94;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-    } */
+    }
     
-    /* .container-start-the-game h2{
+    .container-start-the-game h2{
         height: 5rem;
         width: 7rem;
         margin: 0 auto;
-    } */
+    }
     
-    /* .container-start-the-game p{
+    .container-start-the-game p{
         margin: 0 auto;
         width: 13rem;
         font-size: small;
         font-weight: 300;
         text-align: justify;
-    } */
+    }
     
-    /* .container-start-the-game button{
+    .container-start-the-game button{
         width: 8rem;
         height: 2rem;
         margin: 0 auto;
@@ -502,7 +515,7 @@ main{
         background: none;
         color: #fff;
         transition: 0.3s ease-in;
-    } */
+    }
     
     .container-start-the-game button:hover{
         background-color: #fff;
@@ -510,50 +523,137 @@ main{
         cursor: pointer;
     }
     
-    /* .container-start-the-game h6{
+    .container-start-the-game h6{
         width: 15rem;
         font-weight: 300;
         font-size: 10px;
         text-align: right;
-    } */
+    }
     
-    /* .container-about-the-game{
+    .container-about-the-game{
         width: 100%;
         display: flex; 
-        padding-bottom: 70px;
-        flex-direction: row;
-        justify-content: right;
-        align-items: flex-end;
-    } */
+        flex-direction: column-reverse;
+        justify-content: left;
+    }
     
-    /* .container-text-about{
+    .container-text-about{
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding-right: 10px;
-    } */
+    }
     
-    /* .container-text-about p{
+    .container-text-about p{
         font-size: 0.85rem;
         text-align: right;
-        width: 19rem;
+        width: 23rem;
         padding-top: 17px;
-    } */
+        padding-bottom: 15px;
+        border-bottom: 4px solid #707070;
+    }
     
-    /* .container-text-about h2{
+    .container-text-about h2{
         text-align: right;
-        background-color: aquamarine;
-        height: 3rem;
-    } */
+        height: 1.5rem;
+        font-weight: 800;
+        font-size: 1rem;
+    }
     
-    /* .container-text-about span{
+    .container-text-about span{
         border-bottom: 3px solid black;
         width: 9rem;
-    } */
+    }
     
-    /* .battlefront-image{
+    .battlefront-image{
         width: 18rem;
         padding-top: 8px;
-    } */
+    }
+    
+    /*section 1.2*/
+    #container-structure-game{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .lord-sifh-image{
+        width: 15rem;
+        position: absolute;
+        top: 52.5rem;
+        left: 0.5rem;
+    }
+    
+    .selection-structure{
+        margin: 0 auto;
+        width: 11rem;
+        height: 10rem;
+        text-align: right;
+        position: relative;
+        z-index: 180;
+        bottom: 1rem;
+        left: 0.5rem;
+    }
+
+    .box-title{
+        width: 10.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    
+    .selection-structure h2{
+        font-size: 1.25rem;
+        font-weight: 600;
+        width: 8rem;
+    }
+    
+    .selection-structure b{
+        font-weight: 800;
+    }
+    
+    .selection-structure ul{
+        height: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .selection-structure li{
+        list-style: none;
+        font-size: 9px;
+        font-weight: 500;
+        transition: 0.25s ease-in-out;
+    }
+    
+    .selection-structure li:hover{
+        color: #fff;
+        cursor: pointer;
+        background-color: #D74430;
+    }
+    
+    .fig-rey{
+        width: 8.5rem;
+        position: absolute;
+        right: 4rem;
+        bottom: 9rem;
+        left: 20rem;
+    }
+
+    .rey-image{
+        width: 7.5rem;
+        position: relative;
+    }
+}
+
+/*section 2.1*/
+#container-attributes-game{
+    background-color: #2D2D2D;
+}
+
+.box-display-info{
+    display:none;
 }
