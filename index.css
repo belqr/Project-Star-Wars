@@ -439,7 +439,7 @@ main{
 .rey-image{
     width: 18rem;
     position: relative;
-    top: 3rem;
+    top: 4rem;
 }
 
 @media (max-width: 475px){
@@ -583,7 +583,7 @@ main{
     .lord-sifh-image{
         width: 15rem;
         position: absolute;
-        top: 52.5rem;
+        top: 52rem;
         left: 0.5rem;
     }
     
@@ -595,7 +595,7 @@ main{
         position: relative;
         z-index: 180;
         bottom: 1rem;
-        left: 0.5rem;
+        left: 3.25rem;
     }
 
     .box-title{
@@ -637,15 +637,15 @@ main{
     
     .fig-rey{
         width: 8.5rem;
-        position: absolute;
+        position: relative;
         right: 4rem;
-        bottom: 9rem;
-        left: 20rem;
+        bottom: 16rem;
+        right: 2rem;
     }
 
     .rey-image{
         width: 7.5rem;
-        position: relative;
+        position: absolute;
     }
 }
 
@@ -654,6 +654,123 @@ main{
     background-color: #2D2D2D;
 }
 
+#container-attributes-game h2{
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 150px 0 35px 0;
+    width: 60rem;
+}
+
+#container-attributes-game h3{
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 150px 0px;
+    width: 60rem;
+    text-align: center;
+}
+
+.box-attribute-gallery{
+    margin: 0 auto;
+    width: 74rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.box-attribute-gallery img{
+    max-width: 18.40rem;
+    width: 100%;
+}
+
+.box-attribute-gallery .star-wars-battle-image{
+    max-width: 37rem;
+    width: 100%;
+}
+
+.box-hierarchy-character{
+    margin: 0 auto;
+    width: 74rem;
+    margin-top: 25px;
+}
+
+.stormtrooper-hierarchy-image{
+    width: 100%;
+}
+
+.box-hierarchy-character figcaption{
+    padding: 10px 0;
+    color: #fff;
+    font-weight: 300;
+    font-size: 13px;
+    text-align: right;
+}
+
 .box-display-info{
     display:none;
+}
+
+@media (max-width: 475px){
+    #container-attributes-game{
+        background-color: #2D2D2D;
+    }
+    
+    #container-attributes-game h2{
+        margin: 0 auto;
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.25rem;
+        padding: 50px 0 35px 0;
+        text-align: center;
+        width: 25rem;
+    }
+    
+    #container-attributes-game h3{
+        margin: 0 auto;
+        color: #fff;
+        font-weight: 800;
+        font-size: 1.25rem;
+        padding: 50px 0 35px 0;
+        text-align: right;
+        width: 20rem;
+    }
+    
+    .box-attribute-gallery{
+        margin: 0 auto;
+        width: 25rem;
+        height: 77rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .box-attribute-gallery img{
+        max-width: 25rem;
+        width: 100%;
+    }
+
+    .box-hierarchy-character{
+        margin: 0 auto;
+        width: 25rem;
+    }
+    
+    .stormtrooper-hierarchy-image{
+        width: 100%;
+        padding-top: 5px;
+    }
+    
+    .box-hierarchy-character figcaption{
+        padding: 10px 0;
+        color: #fff;
+        font-weight: 300;
+        font-size: 8px;
+        text-align: right;
+    }
+    
 }
