@@ -5,6 +5,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 header{
     background-image: url("image/background-header.png");
     background-repeat: no-repeat;
@@ -779,7 +783,7 @@ main{
 #container-how-to-play{
     margin: 0 auto;
     width: 74rem;
-    height: 22rem;
+    height: 25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -862,8 +866,8 @@ main{
 @media (max-width: 475px){
     #container-how-to-play{
         margin: 0 auto;
-        width: 28rem;
-        height: 33rem;
+        width: 100%;
+        height: 40rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -879,7 +883,6 @@ main{
         width: 30rem;
         position: absolute;
         right: -4.5rem;
-        /* left: rem; */
         top: -4.5rem;
         overflow: hidden;
     }
@@ -949,3 +952,198 @@ main{
         font-weight: 700;
     }
 }
+
+footer{
+    margin: 0 auto;
+    max-width: 1900px;
+    width: 100%;
+    height: 38rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#container-download-platform{
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
+    background-color: #FF5A56;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-application{
+    max-width: 60%;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box-application h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.box-application p{
+    font-size: 0.85rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.box-platform-images{
+    width: 100%;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.box-platform-images img{
+    width: 100%;
+    max-width: 15rem;
+}
+
+.box-application span{
+    width: 100%;
+    height: 0.25rem;
+    background-color: #D74430;
+    margin-bottom: 10px;
+}
+
+.title-footer-star-wars{
+    width: 15rem;
+}
+
+.darth-vader-image{
+    width: 34rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 3rem;
+}
+
+#container-copyright{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 28rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box-text-copyright{
+    width: 22rem;
+    margin-bottom: 20px;
+}
+
+.box-text-copyright p{
+    font-size: 0.55rem;
+    font-weight: 300;
+}
+
+@media (max-width: 475px){
+    
+    footer{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container-download-platform{
+        margin: 0 auto;
+        width: 100%;
+        height: 45rem;
+        color: #fff;
+        background-color: #FF5A56;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .box-application{
+        width: 100%;
+        max-width: 85%;
+        padding: 0;
+        height: 32rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .box-application h2{
+        font-size: 4rem;
+        font-weight: 800;
+        padding-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .box-application p{
+        font-size: 0.85rem;
+        font-weight: 300;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .box-platform-images{
+        width: 25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .box-platform-images img{
+        width: 12rem;
+    }
+
+    .box-application span{
+        width: 100%;
+        height: 0.25rem;
+        background-color: #D74430;
+        margin: 0 0 10px 0;
+    }
+
+    .title-footer-star-wars{
+        width: 13rem;
+    }
+
+    #container-copyright{
+        margin: 0 auto;
+        width: 100%;
+        height: 23rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .darth-vader-image{
+        width: 25rem;
+        position: absolute;
+        right: 2rem;
+        bottom: 4rem;
+    }
+
+    .box-text-copyright{
+        width: 22rem;
+        margin-bottom: 20px;
+    }
+
+    .box-text-copyright p{
+        font-size: 0.55rem;
+        font-weight: 300;
+    }
+    
+}
+
+
