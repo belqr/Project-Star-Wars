@@ -688,6 +688,13 @@ main{
     flex-wrap: wrap;
 }
 
+.box-attribute-gallery img:hover{
+    background-image: url(image/Grupo\ novos\ graficos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
 .box-attribute-gallery img{
     max-width: 18.40rem;
     width: 100%;
@@ -757,6 +764,13 @@ main{
     .box-attribute-gallery img{
         max-width: 25rem;
         width: 100%;
+    }
+
+    .box-attribute-gallery img:hover{
+        background-image: url(image/Grupo\ novos\ graficos.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
     }
 
     .box-hierarchy-character{
