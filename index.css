@@ -20,7 +20,6 @@ header{
     position: relative;
 }
 
-/*título star wars*/
 .container-star-wars-title{
     width: 100%;
     margin: 0 auto;
@@ -30,7 +29,6 @@ header{
     text-align: center;
 }
 
-/*div contendo duas figure com duas imagens do titulo STAR WARS*/
 .container-title{
     margin: 0 auto;
     width: 100%;
@@ -40,7 +38,6 @@ header{
     position: absolute;
 }
 
-/*imagens do titulo star wars*/
 .container-title img{
     margin: 0 auto;
     max-width: 20rem;
@@ -49,14 +46,12 @@ header{
     top: 3rem;
 }
 
-/* figure do Ren da header*/
 .fig-kylo-ren{
    margin: 0 auto;
    width: 100%;
    height: 32rem;
 }
 
-/*imagem do Ren*/
 .kylo-ren-image{
     margin: 0 auto;
     max-width: 50rem;
@@ -66,8 +61,6 @@ header{
     z-index: 73;
 }
 
-
-/*div contendo o pulador de página*/
 .container-page-next{
     max-width: 7.5rem;
     width: 100%;
@@ -79,7 +72,6 @@ header{
     bottom: 0;
 }
 
-/*texto da div do pulador de pagina*/
 .text-page{
     border-bottom: 3px solid black;
     padding-bottom: 10px;
@@ -91,7 +83,6 @@ header{
     font-size: 1.25em;
 }
 
-/*div contendo as imagens das divisas do pulador de página*/
 .container-divisa-page{
     width:7.5em;
     padding-top: 15px;
@@ -258,7 +249,6 @@ header{
     } 
 }
 
-/*Main*/
 main{
     width: 100%;
     margin: 0 auto;
@@ -266,7 +256,6 @@ main{
     position: relative;
 }
 
-/*section 1.1*/
 #container-star-wars-game{
     background-image: url("image/Robot.png");
     background-repeat: no-repeat;
@@ -383,7 +372,6 @@ main{
     padding-top: 8px;
 }
 
-/*section 1.2*/
 #container-structure-game{
     margin: 0 auto;
     width: 62rem;
@@ -574,7 +562,6 @@ main{
         padding-top: 8px;
     }
     
-    /*section 1.2*/
     #container-structure-game{
         margin: 0 auto;
         width: 100%;
@@ -653,7 +640,6 @@ main{
     }
 }
 
-/*section 2.1*/
 #container-attributes-game{
     background-color: #2D2D2D;
 }
@@ -693,6 +679,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    animation: imageMain 0.25s linear forwards;
 }
 
 .box-attribute-gallery img{
@@ -771,6 +758,7 @@ main{
         background-repeat: no-repeat;
         background-size: cover;
         cursor: pointer;
+        animation: imageMain 0.25s linear forwards;
     }
 
     .box-hierarchy-character{
@@ -1159,5 +1147,15 @@ footer{
     }
     
 }
+
+@keyframes  imageMain{
+    from {
+        transform: scale(1.0);
+    }
+    to {
+        transform: scale(1.025);
+    }
+}
+
 
 
